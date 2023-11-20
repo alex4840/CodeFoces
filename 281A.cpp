@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    string s;
+    cin >> s;
+
+    if (s.size() > 0) {
+        if (s[0] >= 'a' && s[0] <= 'z') {
+            s[0] = s[0] - 32;
+            cout << s << endl;
+        } else {
+            cout << s << endl;
+        }
+    } else {
+        return 0;
+    }
+}
